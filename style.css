@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#e6e3e3;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    color: #848484
+}
+h1,h2,h3{
+    color: #1e1e1e;
+    font-family: system-ui;
+}
+#navigation{
+    background-color: #1e1e1e;
+    
+}
+#navbar{
+    display: flex;
+    /* b lid red; */
+    width: 1140px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#navbar img{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+#navbar .logo h1{
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+#navbar #nav_elements{
+    display: flex;
+}
+#navbar #nav_elements li{
+    padding: 2px 15px;
+    list-style: none;
+    cursor: pointer;
+    font-family: cursive;
+}
+#navbar #nav_elements li a{
+    text-decoration: none;
+    color: white;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 35.5rem;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 55px;
+}
+/* #home h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+} */
+#home .text ul{
+    
+    /* border: 2px solid red; */
+    padding: 0px;
+    position: relative;
+
+}
+#home .text ul li{
+    color: white;
+    list-style: none;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+#home::before{
+    content: '';
+    background-image: url('background_img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#about{
+    /* b lid red; */
+    width: 1140px;
+    margin: 29px auto;
+    display: flex;
+    background-color: white;
+}
+#about .skill{
+    flex-basis:50%; 
+    padding: 25px;
+}
+#about .about_me{
+    
+    flex-basis:50% ;
+    padding: 25px;
+}
+#about .skill .photo_id{
+    display: flex;
+    justify-content: space-around;
+}
+#about .skill .skill_bar{
+    margin-left: 49px;
+}
+#about .skill .skill_bar .html{
+    line-height: 20px;
+}
+#about .skill .skill_bar #file{
+    width: 100%;
+}
+#about .about_me p{
+    line-height: 27px;
+}
+#services{
+    /* b lid red; */
+    width: 1140px;
+    margin: 29px auto;
+    text-align: center;
+}
+#services .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#services .box{
+    /* b lid red; */
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: white;
+    border-radius: 25px;
+}
+#services h1{
+    font-size: 3rem;
+    line-height: 14px;
+}
+#services .icon{
+    border: 10px solid rgb(0, 120, 255);
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+}
+#services .icon:hover{
+    background-color:rgb(0, 120, 255); 
+    transition: all 500ms ease 0s;
+    box-shadow: rgb(205,225,248) 0px 0px 0px 10px
+}
+#numbers{
+    /* b lid red; */
+    width: 1140px;
+    margin: 29px auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+}
+#numbers::before{
+    content: '';
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#numbers .box h3{
+    color: white;
+}
+#portfolio{
+    /* b lid red; */
+    width: 1140px;
+    margin: 29px auto;
+}
+#portfolio h1{
+    font-size: 3rem;
+    line-height: 14px;
+    text-align: center;
+}
+
+#portfolio .container .box{
+    /* b lid red; */
+    width: 31%;
+    margin: 10px 0px;
+    background-color: white;
+}
+#portfolio .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#portfolio .container .box img{
+    vertical-align: middle;
+    width: 100%;
+    
+}
+#portfolio .container .box .txt{
+    position: relative;
+    padding: 6px;
+}
+#portfolio .container .box .txt .fa-plus-circle{
+    position: absolute;
+    right: 15px;
+    top: 26px;
+}
+#testimonial{
+    /* b lid red; */
+    /* width: 1140px; */
+    margin: 29px auto;
+    position: relative;
+    overflow: hidden;
+}
+#testimonial #coursal{
+    display: flex;
+    text-align: center;
+    width: 300%;
+    transition: all 0.3s;
+    padding: 58px 2px;
+}
+#testimonial::before{
+    content: '';
+    background-image:linear-gradient(rgb(0, 120, 255), rgba(0, 0, 0, 0.5)), url('banner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#testimonial #coursal .testimonial_box{
+    flex: 100%;
+}
+#testimonial #coursal .testimonial_box h2{
+    color: white;
+}
+#testimonial #coursal .testimonial_box p{
+    color: white;
+}
+#testimonial #coursal .testimonial_box img{
+    border-radius: 50px;
+}
+#testimonial .fa-chevron-left{
+    position: absolute;
+    left: 85px;
+    cursor: pointer;
+    z-index: 10;
+    top: 218px;
+}
+#testimonial .fa-chevron-right{
+    position: absolute;
+    right: 85px;
+    cursor: pointer;
+    top: 218px;
+}
+#testimonial .dots{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+#testimonial .dots li{
+    width: 14px;
+    height: 14px;
+    /* b lid black; */
+    margin: 0px 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+}
+#testimonial .dots .active{
+    background-color: rgb(0, 120, 255);
+}
+#contact{
+    /* b lid red; */
+    /* width: 1140px; */
+    margin: 29px auto;
+    
+}
+#contact .container{
+    /* b lid red; */
+    width: 1140px;
+    margin: 29px auto;
+    display: flex;
+    
+}
+#contact .container .left_box{
+    flex: 50%;
+    padding: 12px;
+}
+#contact .container .left_box h1{
+    font-size: 2.1rem
+}
+#contact .container .left_box input{
+    width: 94%;
+    display: block;
+    height: 26px;
+    margin: 10px 2px;
+}
+#contact .container .left_box textarea{
+    width: 94%;
+    display: block;
+    margin: 10px 2px;
+}
+#contact .container .left_box .btn{
+    width: 109px;
+    height: 33px;
+    display: block;
+    margin: auto;
+    background-color: rgb(0, 120, 255);
+    color: white;
+    font-size: 1rem;
+    border-radius: 17px;
+    cursor: pointer;
+}
+#contact .container .left_box .btn:hover{
+    transition: all 500ms ease 0s;
+    background-color: rgb(56, 136, 228);
+    box-shadow: rgb(205,225,248) 0px 0px 0px 10px
+}
+#contact .container .right_box{
+    flex: 50%;
+    padding: 12px;
+    font-size: 2.1rem
+}
+#contact .container .right_box h1{
+    font-size: 2.1rem
+}
+#contact .container .right_box p{
+    font-size: 1.4rem
+}
+#contact .container .right_box .socials{
+    margin: 16px 0px;
+}
+#contact .container .right_box .socials a{
+    margin: 5px;
+}
+
+#contact .container{
+    background-color: white;
+}
